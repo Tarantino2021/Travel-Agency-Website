@@ -1,0 +1,191 @@
+.Approach_Two_page {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+  @include media("<=desktop") {
+    height: 100vh;
+  }
+  @include media("<=laptop") {
+    height: 50vh;
+  }
+  @include media("<=tablet") {
+    height: 50vh;
+  }
+  @include media("<=phoneLarge") {
+    height: 400px;
+  }
+  @include media("<=phone") {
+    height: 400px;
+  }
+  @include media("<=phoneSmall") {
+    height: 400px;
+  }
+  .Approach_Two_list_mobile {
+    display: none;
+    @include media("<=phoneLarge") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 280px;
+      height: 400px;
+      margin-left: 74px;
+    }
+    @include media("<=phone") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 280px;
+      height: 400px;
+      margin-left: 44px;
+    }
+    @include media("<=phoneSmall") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 280px;
+      height: 400px;
+      margin-left: 20px;
+    }
+    h1 {
+      font-size: 10px;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        line-height: 20px;
+      }
+    }
+  }
+  .Approach_Two_container {
+    width: 1300px;
+    min-width: 1300px;
+    margin: 0 11.458vw;
+    display: flex;
+    height: 100%;
+    @include media("<=1560px") {
+      width: 1280px;
+      min-width: 1280px;
+    }
+    @include media("<=desktop") {
+      width: 1080px;
+      min-width: 1080px;
+    }
+    @include media("<=1080px") {
+      width: 100%;
+      min-width: 100%;
+    }
+    .Approach_Two_column_One {
+      flex-basis: 46.111vw;
+      position: relative;
+      .Approach_Two_H3 {
+        left: 0;
+        top: 49%;
+        font-weight: bolder;
+        font-size: 1.806vw;
+        line-height: 4.236vw;
+        letter-spacing: -0.05vw;
+        position: absolute;
+        @include media("<=phoneLarge") {
+          display: none;
+        }
+        @include media("<=phone") {
+          display: none;
+        }
+        @include media("<=phoneSmall") {
+          display: none;
+        }
+      }
+
+      .Approach_Two_list {
+        top: 0;
+        left: 13.194vw;
+        width: 30.903vw;
+        height: 100%;
+        position: absolute;
+        @include media("<=phoneLarge") {
+          display: none;
+        }
+        @include media("<=phone") {
+          display: none;
+        }
+        @include media("<=phoneSmall") {
+          display: none;
+        }
+        &:before {
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          position: absolute;
+          background: linear-gradient(180deg, #000 0, transparent 50%, #000);
+        }
+        .Approach_Two_list_Ul {
+          position: absolute;
+          li {
+            font-weight: 600;
+            color: #a3a3a3;
+            font-size: 1.806vw;
+            line-height: 4.236vw;
+            letter-spacing: -0.05vw;
+            text-decoration: none;
+            list-style: none;
+          }
+        }
+      }
+    }
+
+    .Approach_Two_column_Two {
+      display: flex;
+      align-items: center;
+      flex-basis: 30.903vw;
+      position: relative;
+      @include media("<=phoneLarge") {
+        display: none;
+      }
+      @include media("<=phone") {
+        display: none;
+      }
+      @include media("<=phoneSmall") {
+        display: none;
+      }
+      .Approach_Two_column_Two_inner {
+        width: 100%;
+
+        .Approach_block {
+          display: flex;
+          .Approach_Two_h3 {
+            flex-basis: 13.194vw;
+            font-weight: bolder;
+            font-size: 1.806vw;
+            letter-spacing: -0.05vw;
+            line-height: 4.236vw;
+          }
+          .Approach_Two_p {
+            color: #a3a3a3;
+            font-weight: bold;
+            font-size: 1.806vw;
+            letter-spacing: -0.05vw;
+            line-height: 4.236vw;
+            @include media("<=phoneLarge") {
+              font-size: 5.806vw;
+              line-height: 6.236vw;
+            }
+            @include media("<=phone") {
+              font-size: 5.806vw;
+              line-height: 6.236vw;
+            }
+            @include media("<=phoneSmall") {
+              font-size: 5.806vw;
+              line-height: 6.236vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

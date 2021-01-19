@@ -1,0 +1,56 @@
+.Services_Two_page {
+  height: 100vh;
+  width: 100%;
+  padding: 10.889vw 0;
+  background-color: white;
+  @include media("<=desktop") {
+    display: none;
+  }
+  @include media("<=laptop") {
+    display: none;
+  }
+  @include media("<=tablet") {
+    display: none;
+  }
+  @include media("<=phoneLarge") {
+    display: none;
+  }
+  @include media("<=phone") {
+    display: none;
+  }
+  @include media("<=phoneSmall") {
+    display: none;
+  }
+  .Services_Two_container {
+    min-width: 1300px;
+    margin: 0 11.458vw;
+
+    .Services_Two_container_line {
+      color: #f1f1f1;
+      font-weight: 700;
+      font-size: 15.931vw;
+      letter-spacing: -0.351vw;
+      height: 40vh;
+      position: relative;
+      overflow: hidden;
+      line-height: 16vw;
+
+      span {
+        position: absolute;
+        display: inline-block;
+      }
+    }
+    .Services_Two_container_lineTWO {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 950px;
+      color: #f1f1f1;
+      font-weight: 700;
+      font-size: 15.931vw;
+      letter-spacing: -0.351vw;
+      overflow: hidden;
+      height: 40vh;
+    }
+  }
+}

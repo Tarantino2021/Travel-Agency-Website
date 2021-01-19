@@ -1,0 +1,228 @@
+.Approach_one_page {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  @include media(">=LGdesktop") {
+  }
+  @include media("<=desktop") {
+    height: 100vh;
+  }
+  @include media("<=laptop") {
+    height: 50vh;
+  }
+  @include media("<=tablet") {
+    height: 50vh;
+  }
+  @include media("<=phoneLarge") {
+    height: 500px;
+  }
+  @include media("<=phone") {
+    height: 500px;
+  }
+  @include media("<=phoneSmall") {
+    height: 500px;
+  }
+
+  .Approach_one_container {
+    width: 1300px;
+    min-width: 1300px;
+    margin: 0 11.458vw;
+    height: 100%;
+    @include media("<=tablet") {
+      height: 60vh;
+    }
+    @include media("<=phoneLarge") {
+      width: 300px;
+    }
+    @include media("<=phone") {
+      width: 300px;
+    }
+    @include media("<=phoneSmall") {
+      width: 300px;
+    }
+
+    .Approach_one_row {
+      display: flex;
+      margin: 13.889vw 0;
+      height: 100%;
+      padding: 0 32px;
+      @include media("<=laptop") {
+        height: 100px;
+      }
+      @include media("<=tablet") {
+      }
+      @include media("<=phoneLarge") {
+        flex-direction: column;
+        margin: 10.889vw 0;
+        height: 100px;
+        width: 300px;
+        margin-left: -40px;
+      }
+      @include media("<=phone") {
+        flex-direction: column;
+        margin: 10.889vw 0;
+        height: 100px;
+        width: 300px;
+        margin-left: -40px;
+      }
+      @include media("<=phoneSmall") {
+        width: 280px;
+        height: 100%;
+        margin: 20.889vw 0;
+        margin-left: -40px;
+        flex-direction: column;
+        width: 300px;
+      }
+      .Approach_one_text-column {
+        width: 32.986vw;
+        .Approach_one_text-columnHeader {
+          font-weight: 800;
+          font-size: 3.819vw;
+          letter-spacing: -0.109vw;
+
+          @include media("<=phoneLarge") {
+            width: 500px;
+            font-size: 7vw;
+          }
+          @include media("<=phone") {
+            width: 500px;
+            font-size: 10vw;
+          }
+          @include media("<=phoneSmall") {
+            width: 500px;
+            font-size: 10vw;
+          }
+        }
+        .btn-row {
+          width: 256px;
+          position: relative;
+          z-index: 2;
+          margin-top: 20px;
+          .btn-row_a {
+            font-size: 1.2rem;
+            color: $black;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            svg {
+              margin-left: 16px;
+              border: 2px solid $black;
+              padding: 12px;
+              height: 20px;
+              width: 20px;
+              border-radius: 100px;
+              transition: 0.4s ease-in-out;
+              @include media("<=tablet") {
+                padding: 4px;
+                width: 16px;
+                height: 16px;
+              }
+              @include media("<=phoneLarge") {
+                padding: 4px;
+                width: 16px;
+                height: 16px;
+              }
+              @include media("<=phone") {
+                padding: 4px;
+                width: 16px;
+                height: 16px;
+              }
+              @include media("<=phoneSmall") {
+                padding: 4px;
+                width: 16px;
+                height: 16px;
+              }
+            }
+            &:hover {
+              svg {
+                background: $black;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+      .Approach_one_text-column_Two {
+        width: 44.097vw;
+        @include media("<=tablet") {
+          height: 50vh;
+        }
+        @include media("<=phoneLarge") {
+          width: 100.097vw;
+          height: 50vh;
+        }
+        @include media("<=phone") {
+          width: 44.097vw;
+          height: 50vh;
+        }
+        @include media("<=phoneSmall") {
+          width: 44.097vw;
+          height: 50vh;
+        }
+        .Approach_one_text-columnHeader_Two {
+          color: #000;
+          font-weight: 500;
+          font-size: 1.806vw;
+          line-height: 3.194vw;
+          margin-bottom: 2.083vw;
+          letter-spacing: -0.073vw;
+          @include media("<=tablet") {
+          }
+          @include media("<=phoneLarge") {
+            font-size: 7vw;
+            width: 500px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+          }
+          @include media("<=phone") {
+            font-size: 7vw;
+            width: 100vw;
+            margin-top: 60px;
+            margin-bottom: 20px;
+          }
+          @include media("<=phoneSmall") {
+            padding: 4px;
+            width: 16px;
+            height: 16px;
+            width: 100vw;
+          }
+        }
+        .Approach_Paragraph {
+          color: #5d5d5d;
+          font-weight: 500;
+          font-size: 1.806vw;
+          line-height: 3.194vw;
+          margin-bottom: 6.25vw;
+          letter-spacing: -0.073vw;
+          @include media("<=laptop") {
+            font-size: 17px;
+            line-height: 20px;
+          }
+          @include media("<=tablet") {
+            font-size: 17px;
+            line-height: 20px;
+          }
+          @include media("<=phoneLarge") {
+            font-size: 15px;
+            width: 350px;
+            margin-bottom: 20px;
+            line-height: 25px;
+          }
+          @include media("<=phone") {
+            font-size: 4vw;
+            width: 90vw;
+            margin-bottom: 40px;
+            line-height: 8.194vw;
+          }
+          @include media("<=phoneSmall") {
+            font-size: 4vw;
+            width: 90vw;
+            margin-bottom: 40px;
+            line-height: 8.194vw;
+          }
+        }
+      }
+    }
+  }
+}

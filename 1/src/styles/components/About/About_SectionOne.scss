@@ -1,0 +1,153 @@
+.about_page {
+  height: 100vh;
+  width: 100%;
+  margin-top: 15.889vw;
+  margin-bottom: 28.889vw;
+  background: $white;
+  @include media(">=LGdesktop") {
+    height: 70vh;
+  }
+  @include media("<=desktop") {
+    height: 60vh;
+  }
+  @include media("<=laptop") {
+    height: 64vh;
+  }
+  @include media("<=tablet") {
+    height: 64vh;
+  }
+  @include media("<=phoneLarge") {
+    height: 80vh;
+  }
+  @include media("<=phone") {
+    height: 66vh;
+  }
+  @include media("<=phoneSmall") {
+    height: 56vh;
+  }
+  .page_container {
+    width: 1300px;
+    min-width: 1300px;
+    margin: 0 11.458vw;
+    height: 100%;
+    display: flex;
+  }
+  .About_column {
+    width: 32.986vw;
+    .About_columnh2 {
+      font-weight: 800;
+      font-size: 3.819vw;
+      letter-spacing: -0.109vw;
+      z-index: 10;
+    }
+    &:after {
+      content: "";
+      width: 33.889vw;
+      height: 25.597vw;
+      z-index: 1;
+      display: block;
+      position: relative;
+      transform: translate(-7vw, 5vw);
+      background-size: contain;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/96/Armenia_%28orthographic_projection%29.svg");
+      @include media("<=phoneSmall") {
+      }
+    }
+  }
+  .About_columnTwo {
+    width: 44.097vw;
+    .About_columnTwoP {
+      color: #5d5d5d;
+      font-weight: 500;
+      font-size: 1.806vw;
+      line-height: 3.194vw;
+      margin-bottom: 6.25vw;
+      letter-spacing: -0.073vw;
+      @include media(">=LGdesktop") {
+        width: 1100px;
+      }
+
+      @include media("<=desktop") {
+        font-size: 22px;
+        line-height: 25px;
+      }
+      @include media("<=laptop") {
+        font-size: 23px;
+        line-height: 28px;
+      }
+      @include media("<=tablet") {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      @include media("<=phoneLarge") {
+        font-size: 14px;
+        line-height: 19px;
+      }
+      @include media("<=phone") {
+        font-size: 11px;
+        line-height: 17px;
+      }
+      @include media("<=phoneSmall") {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+    .About_columnTwoIMG {
+      width: 5.556vw;
+      height: 5.556vw;
+      overflow: hidden;
+      object-fit: cover;
+      position: relative;
+      border-radius: 0.556vw;
+      margin-bottom: 0.556vw;
+      @include media("<=tablet") {
+        width: 10.556vw;
+        height: 10.556vw;
+      }
+      @include media("<=phoneLarge") {
+        width: 15.556vw;
+        height: 15.556vw;
+      }
+      @include media("<=phone") {
+        width: 15.556vw;
+        height: 15.556vw;
+      }
+      @include media("<=phoneSmall") {
+        width: 15.556vw;
+        height: 15.556vw;
+      }
+    }
+    .about_columntTwo_caption {
+      opacity: 0.8;
+      font-weight: 600;
+      letter-spacing: 0;
+      font-size: 0.903vw;
+      line-height: 1.389vw;
+      @include media("<=tablet") {
+        font-size: 3.903vw;
+        width: 400px;
+        line-height: 4.889vw;
+      }
+      @include media("<=phoneLarge") {
+        font-size: 5.903vw;
+        width: 300px;
+        line-height: 7.389vw;
+      }
+      @include media("<=phone") {
+        font-size: 5.903vw;
+        width: 300px;
+        line-height: 7.389vw;
+      }
+      @include media("<=phoneSmall") {
+        font-size: 5.903vw;
+        width: 300px;
+        line-height: 7.389vw;
+      }
+      .about_columntTwo_caption_span {
+        color: #797979;
+      }
+    }
+  }
+}

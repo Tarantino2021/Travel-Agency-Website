@@ -1,0 +1,118 @@
+.footer {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  margin: 11.361vw 0 0;
+  @include media(">=LGdesktop") {
+  }
+  @include media("<=desktop") {
+    height: 400px;
+  }
+  @include media("<=laptop") {
+    height: 300px;
+  }
+  @include media("<=tablet") {
+    height: 200px;
+  }
+  @include media("<=phoneLarge") {
+    height: 100px;
+  }
+  @include media("<=phone") {
+    height: 100px;
+  }
+  @include media("<=phoneSmall") {
+    height: 100px;
+  }
+  .footer_text_wrapper {
+    top: 10vw;
+    z-index: 3;
+    width: 100%;
+    height: 12vw;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    font-weight: 600;
+    font-size: 8.333vw;
+    text-align: center;
+    letter-spacing: -0.567vw;
+    cursor: pointer;
+
+    .footer_text_span {
+      height: 12vw;
+      display: block;
+      line-height: 12vw;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .footer_btn_wrapper {
+    top: 22vw;
+    cursor: pointer;
+    left: 47vw;
+    z-index: 5;
+    margin: 0 auto;
+    height: 2.639vw;
+    position: relative;
+    padding-right: 3.5vw;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.042vw;
+    text-align: center;
+    line-height: 2.639vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    .footer_btn_arrow {
+      margin-left: 16px;
+      border: 2px solid $black;
+      padding: 12px;
+      height: 18px;
+      width: 18px;
+      background: rgba(255, 255, 255, 0.809);
+      border-radius: 100px;
+      transition: 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+      @include media("<=tablet") {
+        padding: 6px;
+        width: 20px;
+        height: 20px;
+      }
+      @include media("<=phone") {
+        padding: 4px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &:hover {
+      .footer_btn_arrow {
+        background: rgba(0, 0, 0, 0.762);
+        color: $white;
+      }
+    }
+  }
+  .svg_wave {
+    left: 0;
+    fill: #fff3d8;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    will-change: transform;
+    z-index: 4;
+    pointer-events: none;
+  }
+  .svg_waveTwo {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    fill: #fff3d8;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    will-change: transform;
+    top: 8vw;
+    z-index: 1;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

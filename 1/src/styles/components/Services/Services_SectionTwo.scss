@@ -1,0 +1,140 @@
+.Services_one_page {
+  min-height: 180vh;
+  width: 100%;
+  padding: 4.889vw 0;
+  margin-top: -110px;
+  background-color: #fcfcfc;
+  @include media("<=laptop") {
+    min-height: 50vh;
+  }
+  @include media("<=tablet") {
+    min-height: 50vh;
+  }
+  @include media("<=phoneLarge") {
+    min-height: 60vh;
+  }
+  @include media("<=phone") {
+    min-height: 60vh;
+  }
+  @include media("<=phoneSmall") {
+    min-height: 50vh;
+  }
+  .Services_one_container {
+    min-width: 1300px;
+    height: 100%;
+    @include media("<=laptop") {
+      min-width: 400px;
+    }
+    @include media("<=tablet") {
+      min-width: 400px;
+    }
+    @include media("<=phone") {
+      margin: 0;
+    }
+  }
+  .Services_one_accordionOne {
+    margin-bottom: 6.25vw;
+    width: 100%;
+    @include media("<=tablet") {
+      margin-bottom: 40px;
+    }
+    @include media("<=phone") {
+      margin-bottom: 40px;
+    }
+    @include media("<=phoneSmall") {
+      margin-bottom: 40px;
+    }
+    .Services_one_accordionOne_Header {
+      color: #000;
+      margin: 0 11.458vw;
+      padding-bottom: 1.389vw;
+      font-weight: 700;
+      font-size: 2.431vw;
+      line-height: 3.819vw;
+      letter-spacing: -0.069vw;
+      @include media("<=phoneLarge") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+      @include media("<=phone") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+      @include media("<=phoneSmall") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .Services_one_accordionTwo {
+    margin-bottom: 6.25vw;
+    width: 100%;
+    @include media("<=tablet") {
+      font-size: 5.431vw;
+      margin-top: 40px;
+    }
+    @include media("<=phoneLarge") {
+      font-size: 5.431vw;
+      margin-top: 40px;
+    }
+    @include media("<=phone") {
+      font-size: 5.431vw;
+      margin-bottom: 10px;
+    }
+    @include media("<=phoneSmall") {
+      margin-bottom: 40px;
+    }
+    .Services_one_accordionTwo_Header {
+      color: #000;
+      margin: 0 11.458vw;
+      padding-bottom: 1.389vw;
+      font-weight: 700;
+      font-size: 2.431vw;
+      line-height: 3.819vw;
+      letter-spacing: -0.069vw;
+      @include media("<=phoneLarge") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+      @include media("<=phone") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+      @include media("<=phoneSmall") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .Services_one_accordionTree {
+    margin-bottom: 6.25vw;
+    width: 100%;
+    @include media("<=phoneLarge") {
+      margin-top: 40px;
+    }
+    @include media("<=phone") {
+      margin-top: 40px;
+    }
+    .Services_one_accordionTree_Header {
+      color: #000;
+      margin: 0 11.458vw;
+      padding-bottom: 1.389vw;
+      font-weight: 700;
+      font-size: 2.431vw;
+      line-height: 3.819vw;
+      letter-spacing: -0.069vw;
+      @include media("<=phoneLarge") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+      @include media("<=phone") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+      @include media("<=phoneSmall") {
+        font-size: 5.431vw;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
