@@ -11,6 +11,15 @@ function SectionThree() {
       <div className="brands_container">
         <div className="brands_header">
           <h2 className="brands_header_text">Destinations</h2>
+          <div className="brands_search">
+            {showCalendar && <SectionThree_Calendar />}
+            <button
+              onClick={() => setShowCalendar(!showCalendar)}
+              className="brands_searchBtn"
+            >
+              {showCalendar ? "Hide" : "Choose Your Travel Dates"}
+            </button>
+          </div>
         </div>
 
         <div className="brands_items">
@@ -23,15 +32,6 @@ function SectionThree() {
             />
           ))}
         </div>
-      </div>
-      <div className="brands_search">
-        {showCalendar && <SectionThree_Calendar />}
-        <button
-          onClick={() => setShowCalendar(!showCalendar)}
-          className="brands_searchBtn"
-        >
-          {showCalendar ? "Hide" : "Search Dates"}
-        </button>
       </div>
     </div>
   );

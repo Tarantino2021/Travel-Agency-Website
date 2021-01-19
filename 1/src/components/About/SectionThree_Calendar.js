@@ -5,26 +5,32 @@ import { addDays } from "date-fns";
 import { DateRangePicker } from "react-date-range";
 
 function SectionThree_Calendar() {
-  const [firstDate, setFirstDate] = useState(new Date());
-  const [lastDate, setLastDate] = useState(addDays(new Date(), 7));
-
-  const ranges = {
-    startDate: firstDate,
-    endDate: lastDate,
-    key: "selection",
-  };
-
-  const handleCalendar = (DateRanges) => {
-    setFirstDate(DateRanges.selection.firstDate);
-    setLastDate(DateRanges.selection.lastDate);
-  };
+  const [state, setState] = useState([
+    {
+      startDate: new Date(),
+      endDate: addDays(new Date(), 7),
+      key: "selection",
+    },
+  ]);
 
   return (
     <div className="SectionThree_Calendar">
-      <DateRangePicker ranges={[ranges]} onChange={handleCalendar} />
+      <DateRangePicker
+        onChange={(item) => setState([item.selection])}
+        showSelectionPreview={true}
+        moveRangeOnFirstSelection={false}
+        months={1}
+        ranges={state}
+        direction="horizontal"
+      />
       <h2> Number Of Travelers</h2>
-      <input min={0} defaultValue={1} type="number" />
-      <button>Search </button>
+      <input
+        className="SectionThree_Calendar_input"
+        min={0}
+        defaultValue={1}
+        type="number"
+      />
+      <button className="SectionThree_Calendar_btn">Search </button>
     </div>
   );
 }

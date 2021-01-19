@@ -32,6 +32,8 @@
       position: absolute;
       top: -3%;
       left: 10%;
+      width: 70vw;
+      margin-left: 65px;
       @include media("<=desktop") {
         top: 2%;
         left: 4%;
@@ -55,6 +57,28 @@
       .brands_header_text {
         font-weight: 200;
         font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 45px;
+      }
+      .brands_search {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .brands_searchBtn {
+          background-color: white;
+          font-weight: 900;
+          padding: 20px;
+          font-size: 18px;
+          color: rgb(29, 29, 30);
+          border-radius: 10px;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(61, 145, 255);
+            color: white;
+          }
+        }
       }
     }
     .brands_items {
@@ -62,7 +86,7 @@
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       align-items: center;
-      margin-top: 60px;
+      margin-top: 170px;
 
       @include media("<=desktop") {
         margin-left: -180px;
@@ -94,21 +118,6 @@
           display: block;
           pointer-events: none;
         }
-      }
-    }
-  }
-  .brands_search {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    .brands_searchBtn {
-      background-color: white;
-      font-weight: 900;
-      color: #ff7779;
-      cursor: pointer;
-      &:hover {
-        background-color: #ff7779;
-        color: white;
       }
     }
   }

@@ -20,8 +20,8 @@
 @import "./components/Services/Services_SectionThree.scss";
 @import "./components/Services/accordion.scss";
 @import "../styles/components/Shared__/footer.scss";
-@import "react-date-range/dist/styles.css";
-@import "react-date-range/dist/theme/default.css";
+@import "../../node_modules/react-date-range/dist/styles.css";
+@import "../../node_modules/react-date-range/dist/theme/default.css";
 
 * {
   margin: 0;

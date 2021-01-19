@@ -1,6 +1,6 @@
 .SectionThree_Calendar {
   position: absolute;
-  top: 35px;
+  top: 100%;
   left: 25%;
   width: 100vw;
   z-index: 3333;
@@ -15,7 +15,7 @@
     left: 0;
     top: 380px;
   }
-  input {
+  .SectionThree_Calendar_input {
     width: 539px;
     padding: 20px;
     position: absolute;
@@ -27,17 +27,20 @@
       outline: none;
     }
   }
-  button {
+  .SectionThree_Calendar_btn {
     position: absolute;
     left: 0;
     top: 480px;
     text-transform: inherit;
-    background-color: #ff7779;
+    background-color: rgb(61, 145, 255);
     color: white;
+    border: none;
     width: 579px;
+    padding: 16px;
+    cursor: pointer;
     &:hover {
-      background-color: white;
-      color: #ff7779;
+      background-color: rgb(224, 28, 172);
+      color: white;
     }
   }
 }
