@@ -5,6 +5,26 @@
   box-shadow: 0px 6px 18px -9px rgba(110, 93, 93, 0.75);
   transition: transform 100ms ease-in;
   cursor: pointer;
+  @include media("<=desktop") {
+    width: 300px;
+    height: 240px;
+  }
+  @include media("<=laptop") {
+    width: 550px;
+    height: 240px;
+  }
+  @include media("<=tablet") {
+    width: 450px;
+    height: 240px;
+  }
+  @include media("<=phoneLarge") {
+    width: 290px;
+    height: 240px;
+  }
+  @include media("<=phone") {
+    width: 250px;
+    height: 240px;
+  }
   @include media("<=phoneSmall") {
     width: 250px;
     height: 240px;
@@ -18,6 +38,26 @@
     height: 240px;
     width: 100%;
     object-fit: cover;
+    @include media("<=desktop") {
+      width: 300px;
+      height: 140px;
+    }
+    @include media("<=laptop") {
+      width: 550px;
+      height: 150px;
+    }
+    @include media("<=tablet") {
+      width: 450px;
+      height: 150px;
+    }
+    @include media("<=phoneLarge") {
+      width: 290px;
+      height: 150px;
+    }
+    @include media("<=phone") {
+      width: 250px;
+      height: 150px;
+    }
     @include media("<=phoneSmall") {
       width: 250px;
       height: 150px;
@@ -29,6 +69,22 @@
     padding: 20px;
     padding-top: 20px;
     border: 1;
+    @include media("<=desktop") {
+      font-size: 14px;
+      padding: 17px;
+    }
+    @include media("<=tablet") {
+      font-size: 14px;
+      padding: 17px;
+    }
+    @include media("<=phoneLarge") {
+      font-size: 14px;
+      padding: 17px;
+    }
+    @include media("<=phone") {
+      font-size: 14px;
+      padding: 17px;
+    }
     @include media("<=phoneSmall") {
       font-size: 14px;
       padding: 17px;
@@ -36,6 +92,15 @@
     h2 {
       font-size: 18px;
       font-weight: 600;
+      @include media("<=tablet") {
+        font-size: 14px;
+      }
+      @include media("<=phoneLarge") {
+        font-size: 14px;
+      }
+      @include media("<=phone") {
+        font-size: 14px;
+      }
       @include media("<=phoneSmall") {
         font-size: 14px;
       }
@@ -45,6 +110,15 @@
       font-weight: 300;
       margin-top: 8px;
       margin-bottom: 8px;
+      @include media("<=tablet") {
+        font-size: 12px;
+      }
+      @include media("<=phoneLarge") {
+        font-size: 12px;
+      }
+      @include media("<=phone") {
+        font-size: 12px;
+      }
       @include media("<=phoneSmall") {
         font-size: 12px;
       }

@@ -3,6 +3,24 @@
   top: 100%;
   left: 25%;
   z-index: 3333;
+  @include media("<=desktop") {
+    left: 15%;
+  }
+  @include media("<=laptop") {
+    left: 9%;
+  }
+  @include media("<=tablet") {
+    display: none;
+  }
+  @include media("<=phoneLarge") {
+    display: none;
+  }
+  @include media("<=phone") {
+    display: none;
+  }
+  @include media("<=phoneSmall") {
+    display: none;
+  }
   h2 {
     display: flex;
     align-items: center;
