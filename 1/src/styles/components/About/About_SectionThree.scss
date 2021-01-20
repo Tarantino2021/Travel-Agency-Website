@@ -53,6 +53,7 @@
       }
       @include media("<=phoneSmall") {
         top: 1%;
+        left: -4.5%;
       }
       .brands_header_text {
         font-weight: 200;
@@ -65,7 +66,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-
+        z-index: 4444;
         .brands_searchBtn {
           background-color: white;
           font-weight: 900;
@@ -73,6 +74,10 @@
           font-size: 18px;
           color: rgb(29, 29, 30);
           border-radius: 10px;
+          @include media("<=phoneSmall") {
+            padding: 15px;
+            font-size: 12px;
+          }
           cursor: pointer;
           &:hover {
             background-color: rgb(61, 145, 255);
@@ -108,7 +113,7 @@
         grid-template-columns: repeat(1, 1fr);
       }
       @include media("<=phoneSmall") {
-        margin-left: -1030px;
+        margin-left: -1050px;
         grid-template-columns: repeat(1, 1fr);
       }
       .brands_item {

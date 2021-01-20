@@ -2,9 +2,13 @@
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 18px -9px rgba(110, 93, 93, 0.75);
   transition: transform 100ms ease-in;
   cursor: pointer;
+  @include media("<=phoneSmall") {
+    width: 250px;
+    height: 240px;
+  }
   &:hover {
     transform: scale(1.07);
   }
@@ -14,6 +18,10 @@
     height: 240px;
     width: 100%;
     object-fit: cover;
+    @include media("<=phoneSmall") {
+      width: 250px;
+      height: 150px;
+    }
   }
   .SectionThree_Card_info {
     margin-top: -9px;
@@ -21,15 +29,25 @@
     padding: 20px;
     padding-top: 20px;
     border: 1;
+    @include media("<=phoneSmall") {
+      font-size: 14px;
+      padding: 17px;
+    }
     h2 {
       font-size: 18px;
       font-weight: 600;
+      @include media("<=phoneSmall") {
+        font-size: 14px;
+      }
     }
     h4 {
       font-size: 14px;
       font-weight: 300;
       margin-top: 8px;
       margin-bottom: 8px;
+      @include media("<=phoneSmall") {
+        font-size: 12px;
+      }
     }
   }
 }
